@@ -11,7 +11,7 @@
 Open a Snowsight worksheet and paste the contents of [`setup.sql`](setup.sql). Run all statements. This creates the `CUSTOMERS_BANK_DEMO` database with 5 tables of realistic banking data (5K customers, 3K loans, 8K accounts, 200K+ transactions across 15 branches).
 
 ### 2. Verify CoCo is Enabled
-In Snowsight, look for the Cortex Code panel on the right side of any worksheet or notebook. If you don't see it, go to **Settings > Cortex Code** and enable it.
+In Snowsight, open any **SQL Worksheet** or **Notebook** and look for the **Cortex Code panel** on the right side of the screen. It should appear automatically — just click the chat icon if the panel is collapsed.
 
 ### 3. Start Building
 Open the [Quickstart Guide](quickstart_guide.md) and follow the step-by-step exercises.

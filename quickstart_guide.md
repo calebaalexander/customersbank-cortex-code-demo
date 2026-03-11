@@ -86,15 +86,14 @@ Cortex Code (CoCo) is the AI assistant panel built into Snowsight. It writes SQL
 
 1. Go to **Snowsight** (the Snowflake web UI)
 2. Open any **SQL Worksheet** or **Notebook**
-3. Look for the **CoCo panel** on the right side of the screen — it has a chat-style interface
+3. Look for the **CoCo panel** on the right side of the screen — it has a chat-style interface. Click the chat icon if the panel is collapsed.
 
 ### If you don't see it
 
-1. Click your **profile icon** (bottom-left corner of Snowsight)
-2. Go to **Settings**
-3. Look for **Cortex Code** (or "AI Features")
-4. Toggle it **on**
-5. Refresh Snowsight and reopen your worksheet
+CoCo is enabled by default on most Snowflake Enterprise+ accounts. If you don't see the panel:
+- Make sure you're in a **SQL Worksheet** or **Notebook** (not the home page)
+- Try refreshing Snowsight
+- Contact your Snowflake admin — CoCo may need to be enabled at the account level via the `CORTEX_ENABLED` parameter
 
 > **Tip:** CoCo works in both SQL Worksheets and Snowflake Notebooks. It can also read errors, so if something breaks, just paste the error and ask it to fix it.
 
@@ -377,7 +376,7 @@ If you finish the four main exercises and want to keep going, try any of these.
 | Problem | Solution |
 |---------|----------|
 | "Object does not exist" | You're in the wrong schema. Run `USE SCHEMA CUSTOMERS_BANK_DEMO.BANKING;` |
-| CoCo panel isn't visible | Go to profile icon > Settings > Cortex Code and toggle it on, then refresh |
+| CoCo panel isn't visible | Make sure you're in a worksheet or notebook, click the chat icon on the right, or refresh Snowsight |
 | Warehouse not set | Run `USE WAREHOUSE <your_warehouse>;` |
 | Notebook cell won't run | Check that the cell type matches the code (SQL cell for SQL, Python cell for Python) |
 | Streamlit app shows an error | Read the error message in the app. Often it's a missing table or wrong schema. Paste the error into CoCo |
